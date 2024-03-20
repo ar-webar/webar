@@ -1,0 +1,119 @@
+@use "../../globals.scss" as var;
+@import "../../globals.scss";
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../../fonts/Inter-Medium.ttf');
+  font-weight: 400;
+  font-style: normal;
+  }
+
+.partners {
+  display: none;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 1470px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  backdrop-filter: blur(5px);
+  @media (max-width: 992px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.paragraph {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin: 0;
+  color: #0d6efd;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 48px;
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 30px;
+  z-index: 10;
+  font-weight: 700;
+  position: relative;
+
+  @media (max-width: 992px) {
+    font-size: 36px;
+ }
+
+  @media (max-width: 576px) {
+    font-size: 28px;
+ }
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 60px;
+  column-gap: 60px;
+  @media (max-width: 1180px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+}
+
+.clmn {
+  background-color: #ffffff;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+
+.clmn > div:nth-of-type(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.clmn > div:nth-of-type(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.clmn svg {
+  height: 150px;
+  width: 150px;
+  @media (max-width: 1000px) {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.clmn {
+  color: #6f737b;
+  font-size: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  @media (max-width: 1000px) {
+    font-size: 16px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 14px;
+  }
+  @media (max-width: 576px) {
+    align-items: flex-start;
+    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}

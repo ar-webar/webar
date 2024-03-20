@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/Inter-Medium.ttf');
+  font-weight: 400;
+  font-style: normal;
+  }
+
+.container {
+  position: relative;
+  max-width: 1470px;
+  padding-top: 65px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.blocksWrapper {
+  display: flex;
+  justify-content: center;
+  @media (max-width: 780px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.description {
+  width: 480px;
+  height: auto;
+  text-align: justify;
+  padding: 40px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  color: rgb(99, 98, 98);
+  font-size: 17px;
+  @media (max-width: 780px) {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.photoBlock {
+  text-align: center;
+  img {
+    width: 450px;
+    height: 100%;
+    transition: 1s;
+    @media (max-width: 1200px) {
+      transition: none;
+    }
+    @media (max-width: 780px) {
+      height: 550px;
+      width: 70%;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      @media (max-width: 1200px) {
+        transform: none;
+      }
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 30px 0;
+  @media (max-width: 1200px) {
+    display: block;
+    text-align: center;
+  }
+}
+.text {
+  width: 400px;
+  text-align: justify;
+  padding: 20px;
+  background-color: #fff;
+  color: rgb(99, 98, 98);
+  @media (max-width: 1200px) {
+    width: 66%;
+    margin: auto;
+  }
+}
+
+.pic img {
+  width: 400px;
+  height: 100%;
+  transition: 1s;
+  @media (max-width: 1200px) {
+    width: 70%;
+    transition: none;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    @media (max-width: 1200px) {
+      transform: none;
+    }
+  }
+}
+
+.infoBlock {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  img {
+    width: 100%;
+    transition: 1s;
+    @media (max-width: 1175px) {
+      transition: none;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      @media (max-width: 1175px) {
+        transform: none;
+      }
+    }
+  }
+  @media (max-width: 1175px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.imgWrapper {
+  width: 600px;
+  @media (max-width: 1175px) {
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+
+.biography {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  width: 500px;
+  background-color: white;
+  @media (max-width: 1175px) {
+    margin: auto;
+    width: 70%;
+  }
+
+  p {
+    text-align: justify;
+    color: rgb(99, 98, 98);
+    font-size: 17px;
+  }
+}
+
+.title {
+  color: #2a75ff;
+  font-size: 3em;
+  text-align: center;
+}

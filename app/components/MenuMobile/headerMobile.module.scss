@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../../fonts/Inter-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+.containerMobile{
+	font-family: "Inter", sans-serif;
+	@media (min-width: 992px) {
+		display: none;
+	 }
+
+	.links{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		margin: 20px;
+		gap:10px;
+
+		.linkMobile{
+			font-family: "Inter", sans-serif;
+			font-weight: 700;
+			line-height: 24px;
+			color: #111a2e;
+			text-decoration: none;
+			&:hover{
+			color: #0d6efd;
+			}
+
+			.catalog{
+				padding-left: 45px;
+			}
+		}
+	}
+
+	.messengers{
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+
+		.icon{
+			cursor: pointer;
+			background-color: #ffffff;
+			border-radius: 40px;
+			fill: #0d6efd;
+			padding: 15px;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			height: 18px;
+			width: 18px;
+			transition: all 0.4s;
+			box-shadow: 0px 10px 12px rgba(179,179,179,0.21), inset 1px 4px 5px rgba(174,172,243,0.3);
+
+			&:hover{
+				background-color: #0d6efd;
+				fill: #ffffff;
+				transform: translateY(-5px);
+				box-shadow: 0px 10px 12px rgba(28,82,205,0.37), inset 1px 4px 5px rgba(0,0,0,0.3);
+			}
+		}
+	}
+}

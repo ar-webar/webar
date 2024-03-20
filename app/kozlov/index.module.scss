@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/Inter-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.container{
+    position: relative;
+    max-width: 1470px;
+    padding-top:65px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+
+    .content{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .title{
+        color: #2a75ff;
+        font-family: "Inter", sans-serif;
+        font-size: 48px;
+        @media (max-width: 992px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 28px;
+        }
+    }
+
+    .description{
+        color: #2a75ff;
+        font-family: "Inter", sans-serif;
+        font-size: 28px; 
+        @media (max-width: 992px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 17px;
+        }
+    }
+
+    .text{
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 1.6em;;
+        color: rgba(0,0,0,0.65);
+        text-align: start;
+        @media (max-width: 576px) {
+           text-align: justify;
+        }
+    }
+
+    .photo{
+        float: left;
+        padding-right: 25px;
+        padding-bottom: 25px;
+
+        @media (max-width: 870px) {
+            width: 40%;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
+    .photo2{
+        float: right;
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+
+        @media (max-width: 870px) {
+            width: 30%;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
+    .photo3{
+        float: left;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        padding-top: 20px;
+
+        @media (max-width: 870px) {
+            width: 30%;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+
+
+
+$white: #ffffff;
+$blue: #0d6efd;
+$dark-blue: #111a2e;
+$skyblue: #e6f0ff;
+$soft-color: #f8f9fa;
+
+header div.head {
+  width: 100%;
+}
+
+#logo {
+  font-weight: 400;
+}
+
+nav.menu {
+  text-decoration: none;
+}
+
+nav.menu ul.items {
+  list-style-type: none;
+  width: 100%;
+}
+
+
+.wrapper a.button {
+  border-radius: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $blue;
+}
+
+.wrapper a.button:hover {
+  background-color: $blue;
+  color: $white;
+}
+
+.h2 {
+  color: $dark-blue;
+  font-size: 48px;
+  line-height: 1.2em;
+}
+
+.h3 {
+  color: $dark-blue;
+  font-size: 18px;
+}
+
+div.advantages p:first-child {
+  color: $blue;
+  font-size: 14px;
+}
+
+div.advantages div.card .icon {
+  border-color: $blue;
+
+}
+
+div.advantages div.card p:first-child {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+div.advantages div.card p:last-child {
+  font-size: 24px;
+  font-weight: 700;
+  color: #6f737b;
+}
+
+span#paragraph {
+  font-size: 18px;
+  color: $blue;
+}

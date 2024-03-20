@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../app/fonts/Inter-Medium.ttf');
+  font-weight: 400;
+  font-style: normal;
+  }
+
+.ol {
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  counter-reset: main;
+  & > li {
+    counter-increment: main;
+  }
+  li {
+    &::before {
+      content: counter(main) ". ";
+    }
+  }
+  ol {
+    counter-reset: sub;
+    list-style-type: none;
+    & > li {
+      counter-increment: sub;
+      &::before {
+        content: counters(main, ".") "." counter(sub) ". ";
+      }
+    }
+    ol {
+      counter-reset: subsub;
+      list-style-type: none;
+      & > li {
+        counter-increment: subsub;
+        &::before {
+          content: counters(main, ".") "." counters(sub, ".") "."
+            counter(subsub) ". ";
+        }
+      }
+    }
+  }
+}
+
+.decoration {
+  font-weight: bold;
+}
+
+.text {
+  margin: 100px 20px;
+  font-family: "Inter", sans-serif;
+  ul {
+    list-style-type: disc;
+  }
+}

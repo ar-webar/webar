@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../../fonts/Inter-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 1470px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.innerWrapper{
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+.link{
+    text-decoration: underline;
+    font-weight: 400;
+    color: inherit;
+    cursor: pointer;
+    transition: inherit;
+}
+
+.link:hover{
+    text-decoration: none;
+}

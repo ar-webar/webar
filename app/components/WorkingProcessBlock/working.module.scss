@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../../fonts/Inter-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.content{
+	max-width: 1470px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 10px;
+	backdrop-filter: blur(5px);
+
+	.comment{
+		margin-top: 40px;
+		color: rgb(13, 110, 253);
+		font-size: 16px;
+		display: block;
+		@media (max-width: 992px) {
+			margin-top: 30px;
+		}
+	}
+
+	.title{
+		margin-top: 10px;
+		color: rgb(17, 26, 46);
+		font-size: 48px;
+
+		@media (max-width: 992px) {
+         font-size: 36px;
+      }
+
+		@media (max-width: 576px) {
+         font-size: 28px;
+      }
+	}
+
+	.blocks{
+		margin-top: 70px;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+
+		@media (max-width: 992px) {
+    		flex-wrap: wrap;
+		}
+		@media (max-width: 992px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width: 556px) {
+			grid-template-columns: 1fr;
+		}
+
+		.block{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap:15px;
+			background-image: url(https://webar.by/wp-content/uploads/bg-step.png);
+			background-size: cover;
+			background-position: 50% 0%;
+			background-repeat: no-repeat;
+			padding: 10px;
+
+			.icon{
+				background-color: #e6f0ff;;
+				border-radius: 90px;
+				margin-bottom: 25px;
+				align-items: center;
+				justify-content: center;
+				display: flex;
+				flex-direction: column;
+				height: 90px;
+				width: 90px;
+				margin-top: 30px;
+			}
+
+			.subtitle{
+				color: #111a2e;;
+    			font-size: 22px;
+				font-weight: 700;
+				text-align: center;
+			}
+
+			.text{
+				display: flex;
+				text-align: center;
+				color: #6f737b;
+				font-family: "Inter", sans-serif;
+				font-weight: 400;
+				font-size: 16px;
+			}
+		}
+	}
+}
