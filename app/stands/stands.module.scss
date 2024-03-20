@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/Inter-Light.ttf");
+  font-style: normal;
+}
+
+.content {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  z-index: 10;
+}
+
+.wrapper {
+  margin: 150px 50px;
+  font-weight: 200;
+  h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 22px;
+    color: #0d6efd;
+  }
+}
+
+.about {
+  width: 80%;
+}
+
+.innerInfo {
+  border-radius: 10px;
+  background: white;
+  box-shadow: -1.640625px 3px 17px -7px rgb(166, 166, 166);
+  display: flex;
+
+  align-items: center;
+  color: #7f7e7e;
+  margin: 70px 0;
+
+  img {
+    width: 700px;
+    border-radius: 0 5px 5px 0;
+  }
+
+  p {
+    margin: 20px 40px;
+    text-align: justify;
+    font-size: 18px;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 70px 0;
+}
+
+.itemCard {
+  padding: 20px 40px;
+  border-radius: 5px;
+  h5 {
+    font-size: 16px;
+  }
+}
+
+.itemCard:nth-child(odd) {
+  background-color: #d8edff;
+}
+
+.itemCard:nth-child(even) {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.advantagesWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 140px;
+  margin: 80px 0px;
+  h5 {
+    font-size: 18px;
+  }
+}
+
+.advantage {
+  text-align: center;
+}
+
+.usage {
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px auto;
+  grid-gap: 10px;
+  display: grid;
+}
+
+.usageItem {
+  // box-shadow: 1.359375px 1px 12px -6px rgb(166, 166, 166);
+  border-radius: 5px;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  div {
+    margin-left: 20px;
+    p:nth-child(1) {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    p:nth-child(2) {
+      color: #7f7e7e;
+    }
+  }
+}
