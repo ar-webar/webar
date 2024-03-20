@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/Inter-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.container{
+    margin-top: 15px;
+    padding: 10px;
+
+    img{
+        max-width: 100%;
+        transition: all 0.8s;
+        border-radius: 15px;
+
+        &:hover{
+            scale: 1.05;
+        }
+    }
+
+    h1{
+        color: #2a75ff;
+        font-family: "Inter", sans-serif;
+        font-size: 34px;
+        margin-top: 50px;
+        @media (max-width: 992px) {
+            font-size: 28px;
+        }
+    
+        @media (max-width: 576px) {
+            font-size: 22px;
+        } 
+    }
+
+    p{
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 1.8em;
+        color: rgba(0,0,0,0.65);
+        text-align: start;
+
+        @media (max-width: 520px) {
+            line-height: 1.6em;
+        }
+    
+        span{
+            color: #0d0d0e;
+            font-family: "Inter", sans-serif;
+            font-size: 28px;
+            @media (max-width: 992px) {
+                font-size: 24px;
+            }
+        
+            @media (max-width: 576px) {
+                font-size: 20px;
+            } 
+        }    
+    }
+
+    .section_2{
+
+        h1{
+            color: #2a75ff;
+            font-family: "Inter", sans-serif;
+            font-size: 34px;
+            margin-bottom: 50px;
+            margin-top: 40px;
+            @media (max-width: 992px) {
+                font-size: 28px;
+            }
+        
+            @media (max-width: 576px) {
+                font-size: 22px;
+            } 
+        }
+
+        .adv{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-family: "Inter", sans-serif;
+            text-align: start;
+            gap: 30px;
+
+            .block{
+                box-sizing: border-box;
+                box-shadow: 10px 8px 10px 5px  #adb7c8;
+                background: white;
+                border-radius: 15px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                text-align: start;
+                transition: all 0.8s;
+
+                &:hover{
+                transform: translateY(-15px);
+                }
+
+                @media (max-width: 992px) {
+                width: 45%;
+                }
+
+                @media (max-width: 576px) {
+                width: 100%;
+                }
+
+                h3{              
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    text-align: center;
+
+                    @media (max-width: 992px) {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                p{
+                    color: #6f737b;
+                    display: block;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.4em;
+                }
+            }
+        }
+    }
+}
