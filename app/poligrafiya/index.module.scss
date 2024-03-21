@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/Inter-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.container{
+    position: relative;
+    max-width: 1470px;
+    padding-top:20px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+
+    @media (max-width: 450px) {
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .content{
+        margin: 0 auto;
+        margin-top: 50px;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .section_1{
+            img{
+                float: right;
+                width: 40%;
+                border-radius: 15px;
+                margin-left: 15px;
+                margin-top: 10px;
+                @media (max-width: 600px) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .photo{
+                float: left;
+                margin-left:0;
+                margin-right: 20px;
+            }
+
+            .photo_paz{
+                width: 40%;
+                @media (max-width: 600px) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+
+            span{
+                color: #2a75ff;
+            font-family: "Inter", sans-serif;
+            font-size: 24px;
+            margin-left: 50px;
+
+            @media (max-width: 560px) {
+                font-size: 20px;
+                margin-left: 30px;
+            }
+            }
+
+            p{
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+                line-height: 1.4em;
+                color: rgba(0,0,0,0.65);
+                text-align: start;
+            
+                @media (max-width: 520px) {
+                    line-height: 1.4em;
+                }
+            }
+
+        }
+    }
+}
+
+
