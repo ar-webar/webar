@@ -42,7 +42,7 @@ const SeoSites = () => {
     return (
         <div>
             {data.map(el =>
-                <div className={styles.container}>
+                <div id='seo' className={styles.container}>
                     <img src={el.picture} alt='korporativniy site' />
                     <h1>{el.section_1.title}</h1>
                     <p><span>{el.section_1.subTitle}</span>{el.section_1.text}</p>

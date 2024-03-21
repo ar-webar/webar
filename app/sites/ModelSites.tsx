@@ -54,7 +54,7 @@ const ModelSites = () => {
     ]
 
     return (
-        <div className={styles.content}>
+        <div id='modal' className={styles.content}>
             {data.map(el =>
                 <div>
                     <div className={styles.block}>

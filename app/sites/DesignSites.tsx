@@ -73,7 +73,7 @@ const DesignSites = () => {
     return (
         <div className={styles.content}>
             {data.map(el =>
-                <div className={styles.lending}>
+                <div id='design' className={styles.lending}>
                     <div className={styles.block}>
                         <div className={styles.section_1}>
                             <h1>{el.section_1.title}</h1>
