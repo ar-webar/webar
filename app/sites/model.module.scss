@@ -270,7 +270,7 @@
 .modalForm{
     position: absolute;
     display: inline-block;
-    left: calc(100vw /4);
+    left: calc(100vw /4.9);
     top: 65px;
     z-index: 10;
     border-radius: 15px;
@@ -279,7 +279,7 @@
     transition: transform .5s ease;
   
     @media (max-width: 1400px) {
-      left: calc(100vw /3.5);
+      left: calc(100vw /4.3);
     }
     @media (max-width: 1280px) {
       left: calc(100vw /4);
@@ -318,7 +318,7 @@
       width: 320px;
     }
     @media (max-width: 415px) {
-      left: 30px;
+      left: 10px;
       width: 300px;
     }
 }
