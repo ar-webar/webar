@@ -94,7 +94,8 @@
     }
 
     .btnForm {
-      background-color: #0d6efd;
+      // background-color: #0d6efd;
+      background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
       border-radius: 15px;
       position: relative;
       padding: 18px 29px;
@@ -189,7 +190,8 @@
       padding: 10px;
       font-weight: 700;
       text-decoration: none;
-      background-color: rgb(13, 110, 253);
+      // background-color: rgb(13, 110, 253);
+      background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
       fill: white;
 
       &:before {
