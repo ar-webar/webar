@@ -104,7 +104,7 @@ const Page = () => {
                </div>
             ))}  
             <h3>Учебный и методический материал с "оживающими" иллюстрациями</h3>
-            <p>{data.textAboutSecond}</p>
+            <p className={styles.textAbout}>{data.textAboutSecond}</p>
             <div className={styles.cards}>
                {data.cards.map((card,index)=>(
                <div className={styles.itemCard} key={index}>
