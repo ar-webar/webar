@@ -357,7 +357,7 @@
   border-width: 0;
   padding: 0;
   cursor: pointer;
-  background-color: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -373,6 +373,7 @@
 }
 .contact_contactForm__Efnyh button:hover {
   opacity: 0.85;
+  background: linear-gradient(90deg, #031f4a 0%, #2b6de9 50%, #031f4a 100%);
 }
 
 .contact_concent__V9bJ3 {
@@ -494,7 +495,7 @@
 }
 
 .contactBlock_icon__zGIA0 {
-  background-color: #0d6efd;
+  background: linear-gradient(#0d6efd, #94b5f4);
   border-radius: 60px;
   color: #ffffff;
   align-items: center;
@@ -511,7 +512,8 @@
   height: 22px;
 }
 .contactBlock_icon__zGIA0:hover {
-  opacity: 0.7;
+  opacity: 0.9;
+  background: linear-gradient(#031f4a, #2b6de9);
 }
 
 .contactBlock_contactView__WNFaG {
@@ -1278,7 +1280,7 @@ span#examples_paragraph__wmJLr {
   }
 }
 .header_container__wAkUH .header_buttons__agA80 .header_btnForm__4WHq9 {
-  background-color: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   border-radius: 15px;
   position: relative;
   padding: 18px 29px;
@@ -1348,7 +1350,7 @@ span#examples_paragraph__wmJLr {
   padding: 10px;
   font-weight: 700;
   text-decoration: none;
-  background-color: rgb(13, 110, 253);
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   fill: white;
 }
 .header_container__wAkUH .header_buttons__agA80 .header_burger__6bWHJ:before {
@@ -1857,7 +1859,7 @@ span#heroblock_paragraph__WVUIk {
 
 .heroblock_btnConsult__YOpfa {
   font-family: "Inter", sans-serif;
-  background-color: #111a2e;
+  background: linear-gradient(90deg, #031f4a 0%, #2b6de9 50%, #031f4a 100%);
   border-radius: 15px;
   position: relative;
   z-index: 7;
@@ -1891,7 +1893,7 @@ span#heroblock_paragraph__WVUIk {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   border-radius: 14px;
-  background: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   border-radius: 15px;
   border: none;
 }
@@ -2099,6 +2101,60 @@ span#heroblock_paragraph__WVUIk {
     left: 30px;
     width: 300px;
   }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./app/components/Spheres/spheres.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "OpenSans";
+  src: url(/_next/static/media/Inter-Medium.8d213a54.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+.spheres_container__LpXm2 {
+  max-width: 1470px;
+  margin: 0 auto;
+}
+.spheres_container__LpXm2 h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+}
+@media (max-width: 992px) {
+  .spheres_container__LpXm2 h2 {
+    font-size: 30px;
+  }
+}
+.spheres_container__LpXm2 .spheres_blocksWrapper__IEC54 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  gap: 20px;
+}
+.spheres_container__LpXm2 .spheres_blocksWrapper__IEC54 .spheres_block__CTl0e {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 12px 1px #d4d4d4;
+  font-size: 15px;
+  transition: 0.7s;
+}
+.spheres_container__LpXm2 .spheres_blocksWrapper__IEC54 .spheres_block__CTl0e p {
+  color: #6f737b;
+}
+.spheres_container__LpXm2 .spheres_blocksWrapper__IEC54 .spheres_link__7FiB8 {
+  color: #0d6efd;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+.spheres_container__LpXm2 .spheres_blocksWrapper__IEC54 .spheres_block__CTl0e:hover {
+  transform: scale(1.07);
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./app/components/WorkingProcessBlock/working.module.scss ***!
@@ -2481,53 +2537,4 @@ span#partners_paragraph__SFMqU {
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .home_container__QeW_v {
   position: relative;
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./app/components/Spheres/spheres.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-  font-family: "OpenSans";
-  src: url(/_next/static/media/Inter-Medium.8d213a54.ttf);
-  font-weight: 400;
-  font-style: normal;
-}
-.spheres_container__LpXm2 {
-  max-width: 1470px;
-  margin: 0 auto;
-}
-.spheres_container__LpXm2 h2 {
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 48px;
-}
-@media (max-width: 992px) {
-  .spheres_container__LpXm2 h2 {
-    font-size: 30px;
-  }
-}
-.spheres_container__LpXm2 .spheres_blocksWrapper__IEC54 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: "Inter", sans-serif;
-  gap: 20px;
-}
-.spheres_container__LpXm2 .spheres_blocksWrapper__IEC54 .spheres_block__CTl0e {
-  width: 280px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: #fff;
-  padding: 30px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 1px 3px 12px 1px #d4d4d4;
-  font-size: 15px;
-  transition: 0.7s;
-}
-.spheres_container__LpXm2 .spheres_blocksWrapper__IEC54 .spheres_block__CTl0e p {
-  color: #6f737b;
-}
-.spheres_container__LpXm2 .spheres_blocksWrapper__IEC54 .spheres_block__CTl0e:hover {
-  transform: scale(1.07);
 }

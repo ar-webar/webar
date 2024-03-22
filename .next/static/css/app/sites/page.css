@@ -96,7 +96,7 @@
   }
 }
 .header_container__wAkUH .header_buttons__agA80 .header_btnForm__4WHq9 {
-  background-color: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   border-radius: 15px;
   position: relative;
   padding: 18px 29px;
@@ -166,7 +166,7 @@
   padding: 10px;
   font-weight: 700;
   text-decoration: none;
-  background-color: rgb(13, 110, 253);
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   fill: white;
 }
 .header_container__wAkUH .header_buttons__agA80 .header_burger__6bWHJ:before {
@@ -514,7 +514,7 @@
   border-width: 0;
   padding: 0;
   cursor: pointer;
-  background-color: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -530,6 +530,7 @@
 }
 .contact_contactForm__Efnyh button:hover {
   opacity: 0.85;
+  background: linear-gradient(90deg, #031f4a 0%, #2b6de9 50%, #031f4a 100%);
 }
 
 .contact_concent__V9bJ3 {
@@ -862,7 +863,7 @@
 }
 .design_block__YQyVJ .design_section_1__CcPO8 .design_btnConsult__q_NYV {
   font-family: "Inter", sans-serif;
-  background-color: #111a2e;
+  background: linear-gradient(90deg, #031f4a 0%, #2b6de9 50%, #031f4a 100%);
   border-radius: 15px;
   position: relative;
   z-index: 7;
@@ -896,7 +897,7 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   border-radius: 14px;
-  background: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   border-radius: 15px;
   border: none;
 }
@@ -1106,7 +1107,7 @@
 }
 @media (max-width: 415px) {
   .design_modalForm__LeY4i {
-    left: 30px;
+    left: 10px;
     width: 300px;
   }
 }
@@ -1266,6 +1267,11 @@
   max-width: 1300px;
   margin-top: 50px;
 }
+@media (max-width: 520px) {
+  .model_content__9P7ZT {
+    margin-top: 15px;
+  }
+}
 
 .model_description__6q0Ft {
   font-family: "Inter", sans-serif;
@@ -1288,6 +1294,7 @@
   flex-direction: column;
   text-align: start;
   width: 100%;
+  position: relative;
 }
 .model_block__ApKfx .model_section_1__6_W9N {
   padding: 20px;
@@ -1300,7 +1307,7 @@
 }
 .model_block__ApKfx .model_section_1__6_W9N .model_btnConsult__So5_6 {
   font-family: "Inter", sans-serif;
-  background-color: #111a2e;
+  background: linear-gradient(90deg, #031f4a 0%, #2b6de9 50%, #031f4a 100%);
   border-radius: 15px;
   position: relative;
   z-index: 7;
@@ -1334,7 +1341,7 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   border-radius: 14px;
-  background: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   border-radius: 15px;
   border: none;
 }
@@ -1375,7 +1382,9 @@
 }
 @media (max-width: 520px) {
   .model_block__ApKfx .model_section_1__6_W9N .model_photo__FQJYH {
-    max-width: 180px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
   }
 }
 .model_block__ApKfx .model_section_1__6_W9N h1 {
@@ -1532,7 +1541,7 @@
 .model_modalForm__5ULGM {
   position: absolute;
   display: inline-block;
-  left: 25vw;
+  left: 20.4081632653vw;
   top: 65px;
   z-index: 10;
   border-radius: 15px;
@@ -1542,7 +1551,7 @@
 }
 @media (max-width: 1400px) {
   .model_modalForm__5ULGM {
-    left: 28.5714285714vw;
+    left: 23.2558139535vw;
   }
 }
 @media (max-width: 1280px) {
@@ -1603,7 +1612,7 @@
 }
 @media (max-width: 415px) {
   .model_modalForm__5ULGM {
-    left: 30px;
+    left: 10px;
     width: 300px;
   }
 }
@@ -1687,7 +1696,7 @@
 }
 .sites_block__CyOFL .sites_section_1__8dRHY .sites_btnConsult__OXe0x {
   font-family: "Inter", sans-serif;
-  background-color: #111a2e;
+  background: linear-gradient(90deg, #031f4a 0%, #2b6de9 50%, #031f4a 100%);
   border-radius: 15px;
   position: relative;
   z-index: 7;
@@ -1721,7 +1730,7 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   border-radius: 14px;
-  background: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   border-radius: 15px;
   border: none;
 }
@@ -1758,11 +1767,6 @@
   .sites_block__CyOFL .sites_section_1__8dRHY .sites_photo__Z738K {
     max-width: 200px;
     margin-right: 20px;
-  }
-}
-@media (max-width: 520px) {
-  .sites_block__CyOFL .sites_section_1__8dRHY .sites_photo__Z738K {
-    max-width: 180px;
   }
 }
 .sites_block__CyOFL .sites_section_1__8dRHY h1 {
@@ -1992,7 +1996,7 @@
 }
 @media (max-width: 415px) {
   .sites_modalForm__T73CH {
-    left: 30px;
+    left: 10px;
     width: 300px;
   }
 }

@@ -145,7 +145,7 @@
   }
 }
 .header_container__wAkUH .header_buttons__agA80 .header_btnForm__4WHq9 {
-  background-color: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   border-radius: 15px;
   position: relative;
   padding: 18px 29px;
@@ -215,7 +215,7 @@
   padding: 10px;
   font-weight: 700;
   text-decoration: none;
-  background-color: rgb(13, 110, 253);
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   fill: white;
 }
 .header_container__wAkUH .header_buttons__agA80 .header_burger__6bWHJ:before {
@@ -563,7 +563,7 @@
   border-width: 0;
   padding: 0;
   cursor: pointer;
-  background-color: #0d6efd;
+  background: linear-gradient(90deg, #0d6efd 0%, #94b5f4 50%, #0d6efd 100%);
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -579,6 +579,7 @@
 }
 .contact_contactForm__Efnyh button:hover {
   opacity: 0.85;
+  background: linear-gradient(90deg, #031f4a 0%, #2b6de9 50%, #031f4a 100%);
 }
 
 .contact_concent__V9bJ3 {
