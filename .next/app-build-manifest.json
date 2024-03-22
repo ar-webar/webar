@@ -16,12 +16,6 @@
       "static/chunks/main-app.js",
       "static/css/app/stands/page.css",
       "static/chunks/app/stands/page.js"
-    ],
-    "/sites/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/sites/page.css",
-      "static/chunks/app/sites/page.js"
     ]
   }
 }
