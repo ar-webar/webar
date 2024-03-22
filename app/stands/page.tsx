@@ -1,13 +1,16 @@
+'use client'
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import Approve from "@/app/components/Icons/StandsPros/Approve";
 import ProsFirst from "@/app/components/Icons/StandsPros/ProsFirst";
 import ProsSecond from "@/app/components/Icons/StandsPros/ProsSecond";
 import ProsThird from "@/app/components/Icons/StandsPros/ProsThird";
-
+import { useState } from "react";
+import ModalForm from "../components/ModalForm/ModalForm";
 import styles from "./stands.module.scss";
 
 const Page = () => {
+  const [modalOpen, setModalOpen] = useState(false)
   const data = {
     textAboutFirst:
       "Тематические и агитационные стенды с элементами дополненной реальности представляют собой эффективный способ привлечения внимания и обеспечения вовлеченности аудитории. AR может быть использована для воспроизведения видео-сюжетов, связанных с тематикой стенда. Пользователи могут активировать видео, сканируя маркеры или QR-коды на стенде, и просматривать контент прямо на своих мобильных устройствах.",
@@ -88,7 +91,11 @@ const Page = () => {
           heading: 'Инструкции по использованию бытовой техники',
           text: 'Создание AR видео-инструкций для обучения пользователям использованию различных бытовых устройств, таких как кофемашины, микроволновые печи, стиральные машины и другое'
         }
-    ]
+    ],
+    arImage: '/standsImages/ar1.jpg',
+    arHeading: 'Хотите так же?',
+    arText: 'Наша команда разработчиков предоставит большое количество вариантов дизайна для ваших стендов, используя передовые технологии дополненной реальности. Мы создадим уникальные визуальные эффекты, которые не только привлекут внимание посетителей, но и оставят незабываемые впечатления. Наши специалисты готовы воплотить любые ваши идеи в реальность и подобрать оптимальное решение, которое подчеркнет уникальность вашего бренда и сделает ваш стенд неповторимым. Работая с нами, вы можете быть уверены в том, что ваши стенды станут яркими и запоминающимися!',
+    btn_consult_name: 'Заказать консультацию'
     };
   return (
     <div className={styles.content}>
@@ -138,6 +145,20 @@ const Page = () => {
                 ))}
                 
             </div>
+            <div className={styles.orderBlock}>
+                  <img src={data.arImage}/>
+                  <div>
+                    <p>{data.arHeading}</p>
+                    <p>{data.arText}</p>
+                    <button className={styles.btnConsult} onClick={() => setModalOpen(!modalOpen)}>
+                      <span>{data.btn_consult_name}</span></button>
+                      
+                  </div>
+              
+            </div>
+                <div className={styles.modalForm} >
+                            {modalOpen && (<ModalForm modal={setModalOpen} />)}
+                        </div>
       </div>
 
       <Footer />
