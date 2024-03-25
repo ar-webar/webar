@@ -11,6 +11,7 @@ import { useState } from 'react';
 import MenuMobile from '../MenuMobile/MenuMobile';
 import ModalForm from '../ModalForm/ModalForm';
 import Pages from '@/pages/list';
+import SidePanel from '../SidePanel/SidePanel';
 
 const data = {
     navLinks: [
@@ -94,7 +95,7 @@ const Header = () => {
             <div className={styles.modalForm} >
                 {modal && (<ModalForm modal={setModal} />)}
             </div>
-
+            <div className={styles.panel}><SidePanel /></div>
         </div>
     );
 };
