@@ -37,7 +37,7 @@ const ToysPage = () => {
         <div className={styles.container}>
             <Header />
             {data.map(el =>
-                <div className={styles.content}>
+                <div className={styles.content} key={el.description}>
                     <h1>{el.title_1}</h1>
                     <h1>{el.title_2}</h1>
                     <div className={styles.marquee}>

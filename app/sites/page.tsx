@@ -76,7 +76,7 @@ const PageCreateSites = () => {
             <Header />
             <div className={styles.content}>
                 {data.map(el =>
-                    <div id='lending' className={styles.lending}>
+                    <div id='lending' className={styles.lending} key={el.title}>
                         <div className={styles.title}>{el.title}</div>
                         <div className={styles.block}>
                             <div className={styles.section_1}>
@@ -97,7 +97,7 @@ const PageCreateSites = () => {
                                 <h1>{el.section_2.title}</h1>
                                 <div className={styles.adv}>
                                     {el.section_2.adv.map(adv =>
-                                        <div className={styles.block}>
+                                        <div className={styles.block} key={adv.subTitle}>
                                             <div className={styles.picture}>
                                                 <div className={styles.icon}>{adv.img}</div>
                                             </div>

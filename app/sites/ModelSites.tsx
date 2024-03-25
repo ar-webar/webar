@@ -56,7 +56,7 @@ const ModelSites = () => {
     return (
         <div id='modal' className={styles.content}>
             {data.map(el =>
-                <div>
+                <div key={el.btn_consult.name}>
                     <div className={styles.block}>
                         <div className={styles.section_1}>
                             <img src={el.picture} alt='модель' className={styles.photo} />
@@ -77,7 +77,7 @@ const ModelSites = () => {
                         <h1>{el.section_2.title}</h1>
                         <div className={styles.model}>
                             {el.section_2.model.map(model =>
-                                <div className={styles.blockModel}>
+                                <div className={styles.blockModel} key={model.subTitle}>
                                     <h3>{model.subTitle}</h3>
                                     <p>{model.text}</p>
                                     <p>{model.text_2}</p>
@@ -89,7 +89,7 @@ const ModelSites = () => {
                         <h1>{el.section_2.title_2}</h1>
                         <div className={styles.model_2}>
                             {el.section_2.work.map(work =>
-                                <div className={styles.blockModel_2}>
+                                <div className={styles.blockModel_2} key={work.subTitle}>
                                     <h3>{work.subTitle}</h3>
                                     <p>{work.description}</p>
                                 </div>

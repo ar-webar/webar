@@ -42,7 +42,7 @@ const SeoSites = () => {
     return (
         <div>
             {data.map(el =>
-                <div id='seo' className={styles.container}>
+                <div id='seo' className={styles.container} key={el.btn_consult.name}>
                     <img src={el.picture} alt='korporativniy site' />
                     <h1>{el.section_1.title}</h1>
                     <p><span>{el.section_1.subTitle}</span>{el.section_1.text}</p>
@@ -52,7 +52,7 @@ const SeoSites = () => {
                         <h1>{el.section_2.title}</h1>
                         <div className={styles.adv}>
                             {el.section_2.adv.map(adv =>
-                                <div className={styles.block}>
+                                <div className={styles.block} key={adv.subTitle}>
                                     <h3>{adv.subTitle}</h3>
                                     <p>{adv.text}</p>
                                 </div>

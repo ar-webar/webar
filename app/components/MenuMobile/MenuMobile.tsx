@@ -12,11 +12,11 @@ const MenuMobile = () => {
 			url: '/#Advantages',
 			name: 'Преимущества'
 		},
-		{
-			url: '',
-			name: 'Каталог',
-			list: <Pages />
-		},
+		// {
+		// 	url: '',
+		// 	name: 'Каталог',
+		// 	list: <Pages />
+		// },
 		{
 			url: '/#Examples',
 			name: 'Примеры работ'
@@ -49,9 +49,12 @@ const MenuMobile = () => {
 		<div className={styles.containerMobile}>
 			<div className={styles.links}>
 				{data.map(link =>
-					<Link key={link.name} href={link.url} className={styles.linkMobile} onMouseEnter={link.list ? onMouseEnterHandler : () => { }} onMouseLeave={onMouseLeaveHandler} >
+					// <Link key={link.name} href={link.url} className={styles.linkMobile} onMouseEnter={link.list ? onMouseEnterHandler : () => { }} onMouseLeave={onMouseLeaveHandler} >
+					// 	{link.name.toLocaleUpperCase()}
+					// 	{list && <div className={styles.catalog}>{link.list}</div>}
+					// </Link>)}
+					<Link key={link.name} href={link.url} className={styles.linkMobile} >
 						{link.name.toLocaleUpperCase()}
-						{list && <div className={styles.catalog}>{link.list}</div>}
 					</Link>)}
 			</div>
 			<Messengers />
