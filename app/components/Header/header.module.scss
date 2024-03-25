@@ -273,8 +273,7 @@
 
 .panel{
   position: absolute;
-  height: 100vh;
-  top:0;
+  top: calc(100vh/2.5);
   right: 0;
 }
 

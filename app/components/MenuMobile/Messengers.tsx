@@ -9,7 +9,7 @@ import Tel from '../Icons/svg/Tel';
 const Messengers = () => {
 	const data = [
 		{
-			url: "tel:+375296430971",
+			url: "tel:+375293385901",
 			icon: <Tel />,
 			name: "Instagram",
 		},
