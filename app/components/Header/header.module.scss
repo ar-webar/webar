@@ -271,6 +271,13 @@
   transition: transform 0.5s ease;
 }
 
+.panel{
+  position: absolute;
+  height: 100vh;
+  top:0;
+  right: 0;
+}
+
 .burgerMob {
   display: none;
   justify-content: center;
