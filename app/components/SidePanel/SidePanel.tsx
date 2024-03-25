@@ -13,7 +13,7 @@ const SidePanel = () => {
     const data = {
         messengers: [
             {
-                url: "tel:+375296430971",
+                url: "tel:+375293385901",
                 icon: <Tel />,
                 name: "Instagram",
             },
