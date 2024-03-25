@@ -333,30 +333,19 @@
     @media (max-width: 700px) {
       left: calc(100vw /9);
     }
-    @media (max-width: 640px) {
-      left: calc(100vw /11);
-      width: 470px;
-    }
-    @media (max-width: 600px) {
-      left: 70px;
-      width: 400px;
-    }
-    @media (max-width: 550px) {
-      left: 40px;
-      width: 400px;
-    }
-    @media (max-width: 500px) {
-      left: 20px;
-      width: 380px;
-    }
-    @media (max-width: 450px) {
-      left: 35px;
-      width: 320px;
-    }
-    @media (max-width: 415px) {
-      left: 10px;
-      width: 300px;
-    }
+    @media (max-width: 665px) {
+        left: calc(100vw /11);
+        width: 470px;
+      }
+      @media (max-width: 600px) {
+          margin: 10px auto;
+          width: 80%;
+      }
+      @media (max-width: 500px) {
+          left: 0;
+          margin: 10px auto;
+          width: 100%;
+      }
 }
 
 
