@@ -48,7 +48,7 @@ const Poligrafiya = () => {
         <div className={styles.container}>
             <Header />
             {data.map(el =>
-                <div className={styles.content}>
+                <div className={styles.content} key={el.description}>
                     <div className={styles.section_1}>
                         <p>
                             <span>{el.span}</span>

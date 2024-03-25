@@ -19,11 +19,11 @@ const data = {
             url: '/#Advantages',
             name: 'Преимущества'
         },
-        {
-            url: '',
-            name: 'Каталог',
-            list: <Pages />
-        },
+        // {
+        //     url: '',
+        //     name: 'Каталог',
+        //     list: <Pages />
+        // },
         {
             url: '/#Examples',
             name: 'Примеры работ'
@@ -73,9 +73,12 @@ const Header = () => {
                 <nav className={styles.nav}>
                     {data.navLinks.map(link => {
                         return (
-                            <Link key={link.name} href={link.url} className={styles.link} onMouseEnter={link.list ? onMouseEnterHandler : () => { }} onMouseLeave={onMouseLeaveHandler}>
+                            // <Link key={link.name} href={link.url} className={styles.link} onMouseEnter={link.list ? onMouseEnterHandler : () => { }} onMouseLeave={onMouseLeaveHandler}>
+                            //     {link.name}
+                            //     {list && <div className={styles.list}>{link.list}</div>}
+                            // </Link>
+                            <Link key={link.name} href={link.url} className={styles.link}>
                                 {link.name}
-                                {list && <div className={styles.list}>{link.list}</div>}
                             </Link>
                         )
                     })}

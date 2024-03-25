@@ -73,13 +73,13 @@ const DesignSites = () => {
     return (
         <div className={styles.content}>
             {data.map(el =>
-                <div id='design' className={styles.lending}>
+                <div id='design' className={styles.lending} key={el.btn_consult.name}>
                     <div className={styles.block}>
                         <div className={styles.section_1}>
                             <h1>{el.section_1.title}</h1>
                             <div className={styles.photo}>
                                 {el.picture.map(photo =>
-                                    <img src={photo.img} alt='дизайн' />)}
+                                    <img src={photo.img} alt='дизайн' key={photo.img} />)}
                             </div>
                             <p>
                                 <span>{el.section_1.subTitle}</span>
@@ -97,7 +97,7 @@ const DesignSites = () => {
                             <h1>{el.section_2.title}</h1>
                             <div className={styles.adv}>
                                 {el.section_2.adv.map(adv =>
-                                    <div className={styles.block}>
+                                    <div className={styles.block} key={adv.subTitle}>
                                         <div className={styles.icon}>{adv.img}</div>
                                         <h3>{adv.subTitle}</h3>
                                         <p>{adv.text}</p>

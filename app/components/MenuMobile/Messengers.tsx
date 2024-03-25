@@ -4,9 +4,15 @@ import TelegramIcon from '../Icons/TelegramIcon';
 import ViberIcon from '../Icons/ViberIcon';
 import YoutubeIcon from '../Icons/YoutubeIcon';
 import styles from './headerMobile.module.scss';
+import Tel from '../Icons/svg/Tel';
 
 const Messengers = () => {
 	const data = [
+		{
+			url: "tel:+375296430971",
+			icon: <Tel />,
+			name: "Instagram",
+		},
 		{
 			url: 'https://t.me/Webarby',
 			icon: <TelegramIcon />,
@@ -17,16 +23,16 @@ const Messengers = () => {
 			icon: <ViberIcon />,
 			name: "Viber"
 		},
-		{
-			url: 'https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Fwww.instagram.com%2Fwebar_by%2F%3F__coig_ufac%3D1',
-			icon: <InstagramIcon />,
-			name: "Instagram"
-		},
-		{
-			url: 'https://www.youtube.com/channel/UC4ZEIM-EYLsR_BnodAbW2Lg',
-			icon: <YoutubeIcon />,
-			name: "Youtube"
-		},
+		// {
+		// 	url: 'https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Fwww.instagram.com%2Fwebar_by%2F%3F__coig_ufac%3D1',
+		// 	icon: <InstagramIcon />,
+		// 	name: "Instagram"
+		// },
+		// {
+		// 	url: 'https://www.youtube.com/channel/UC4ZEIM-EYLsR_BnodAbW2Lg',
+		// 	icon: <YoutubeIcon />,
+		// 	name: "Youtube"
+		// },
 	]
 	return (
 		<div className={styles.messengers}>
