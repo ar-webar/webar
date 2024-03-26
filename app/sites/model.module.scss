@@ -273,47 +273,52 @@
         }
     }
 
-.modalForm{
-    position: absolute;
-    display: inline-block;
-    left: calc(100vw /4.9);
-    top: 65px;
-    z-index: 10;
-    border-radius: 15px;
-    width: 600px;
-    background: white;
-    transition: transform .5s ease;
-  
-    @media (max-width: 1400px) {
-      left: calc(100vw /4.3);
+    .modalForm{
+        position: absolute;
+        display: inline-block;
+        text-align: start;
+        left: calc(100vw /4.3);
+        z-index: 10;
+        border-radius: 15px;
+        width: 600px;
+        background: white;
+        transition: transform .5s ease;
+      
+        @media (max-width: 1400px) {
+          left: calc(100vw /3.5);
+        }
+        @media (max-width: 1280px) {
+          left: calc(100vw /4.2);
+          width: 550px; 
+        }
+        @media (max-width: 992px) {
+            left: calc(100vw /4.6);
+            width: 500px; 
+        }
+        @media (max-width: 960px) {
+          width: 500px; 
+        }
+        @media (max-width: 900px) {
+          left: calc(100vw /6.2);
+        }
+        @media (max-width: 780px) {
+          left: calc(100vw /7);
+        }
+        @media (max-width: 715px) {
+          left: calc(100vw /9.4);
+        }
+        @media (max-width: 665px) {
+          left: calc(100vw /11);
+          width: 470px;
+        }
+        @media (max-width: 600px) {
+            margin: 10px auto;
+            width: 80%;
+        }
+        @media (max-width: 500px) {
+            top:350px;
+            left: 0;
+            margin: 10px auto;
+            width: 100%;
+        }
     }
-    @media (max-width: 1280px) {
-      left: calc(100vw /4);
-      width: 550px; 
-    }
-    @media (max-width: 960px) {
-      width: 500px; 
-    }
-    @media (max-width: 900px) {
-      left: calc(100vw /6);
-    }
-    @media (max-width: 780px) {
-      left: calc(100vw /7);
-    }
-    @media (max-width: 700px) {
-      left: calc(100vw /9);
-    }
-    @media (max-width: 665px) {
-        left: calc(100vw /11);
-        width: 470px;
-      }
-      @media (max-width: 600px) {
-          margin: 10px auto;
-          width: 80%;
-      }
-      @media (max-width: 500px) {
-          left: 0;
-          margin: 10px auto;
-          width: 100%;
-      }
-}

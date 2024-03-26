@@ -88,7 +88,9 @@ const DesignSites = () => {
                             <div className={styles.description}>{el.section_1.text_2}</div>
                             <div className={styles.description}>{el.subTitle}</div>
                             <button className={styles.btnConsult} onClick={() => setConsultOpen(!consultOpen)}>
-                                <span>{el.btn_consult.name}</span></button>
+                                <span>{el.btn_consult.name}</span>
+                            </button>
+
                         </div>
                         <div className={styles.modalForm} >
                             {consultOpen && (<ModalForm modal={setConsultOpen} />)}

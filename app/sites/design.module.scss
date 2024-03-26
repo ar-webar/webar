@@ -9,6 +9,7 @@
 .content{
     margin: 0 auto;
     max-width: 1300px;
+    position: relative;
 
     hr{
         width: 70%;
@@ -268,7 +269,9 @@
 
 .modalForm{
     position: absolute;
+    top:150px;
     display: inline-block;
+    text-align: start;
     left: calc(100vw /4.3);
     z-index: 10;
     border-radius: 15px;
@@ -280,20 +283,24 @@
       left: calc(100vw /3.5);
     }
     @media (max-width: 1280px) {
-      left: calc(100vw /4);
+      left: calc(100vw /4.2);
       width: 550px; 
+    }
+    @media (max-width: 992px) {
+        left: calc(100vw /4.6);
+        width: 500px; 
     }
     @media (max-width: 960px) {
       width: 500px; 
     }
     @media (max-width: 900px) {
-      left: calc(100vw /6);
+      left: calc(100vw /6.2);
     }
     @media (max-width: 780px) {
       left: calc(100vw /7);
     }
-    @media (max-width: 700px) {
-      left: calc(100vw /9);
+    @media (max-width: 715px) {
+      left: calc(100vw /9.4);
     }
     @media (max-width: 665px) {
       left: calc(100vw /11);
@@ -304,6 +311,7 @@
         width: 80%;
     }
     @media (max-width: 500px) {
+        top:450px;
         left: 0;
         margin: 10px auto;
         width: 100%;

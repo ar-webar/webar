@@ -85,7 +85,7 @@ export const Contact: FC = () => {
             </Link>
           </div>
         </div>
-        <button>Отправить сообщение</button>
+        <button className={styles.send}>Отправить сообщение</button>
       </div>
     </form>
   );
