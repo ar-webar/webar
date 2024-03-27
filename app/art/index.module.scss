@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/Inter-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.container{
+    position: relative;
+    max-width: 1470px;
+    padding-top:55px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+
+    @media (max-width: 500px) {
+        margin: 20px 0 0 0;
+        padding-top: 30px;
+    }
+
+    .content{
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 10px;
+
+        h1{
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            color: rgb(17, 26, 46);
+            font-size: 44px;
+            margin-bottom: 80px;
+
+            @media (max-width: 992px) {
+                margin-top: 20px;
+                font-size: 34px;
+                padding: 0;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 28px;
+                margin: 0;
+                margin-top: 20px;
+            }
+        }
+
+        p{
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            line-height: 1.8em;
+            color: rgba(0,0,0,0.65);
+            text-align: start;
+
+            @media (max-width: 992px) {
+                line-height: 1.4em;
+            }
+        }
+
+        .section{
+            margin-top: 50px;
+            img{
+                float: right;
+                width: 40%;
+                border-radius: 15px;
+                margin-left: 15px;
+            }
+
+            h2{
+                color: #0d0d0e;
+                font-family: "Inter", sans-serif;
+                font-size: 28px;
+                text-align: start;
+                @media (max-width: 992px) {
+                    font-size: 24px;
+                }
+            
+                @media (max-width: 576px) {
+                    font-size: 20px;
+                } 
+            }
+
+            p{
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+                line-height: 1.8em;
+                color: rgba(0,0,0,0.65);
+                text-align: start;
+                padding: 0 10px;
+
+                @media (max-width: 992px) {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.4em;
+                } 
+
+                span{
+                    color: #2a75ff;
+                    font-family: "Inter", sans-serif;
+                    font-size: 34px;
+                    padding-left: 40px;
+                    @media (max-width: 992px) {
+                        font-size: 28px;
+                    }
+                
+                    @media (max-width: 576px) {
+                        font-size: 22px;
+                    } 
+                }
+            }
+
+            .adv{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                gap: 20px;
+                background: white;
+                border-radius: 15px;
+                padding: 10px;
+                box-shadow: 10px 8px 10px 5px  #adb7c8;
+                margin: 40px 0;
+                opacity: 0.8;
+
+                @media (max-width: 1050px) {
+                    gap: 15px;
+                } 
+
+                @media (max-width: 950px) {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: start;
+                } 
+
+                .advBlock{
+                    display: flex;
+                    flex-direction: column;
+
+                    div{
+                        fill: #2a75ff; 
+                    }
+
+                    h3{
+                        color: #2a75ff;
+                        font-family: "Inter", sans-serif;
+                        font-size: 20px;
+                        
+                        @media (max-width: 992px) {
+                            font-size: 18px;
+                            margin: 0;
+                        }                      
+                    }
+
+                    p{
+                        font-size: 16px;
+                        line-height: 1.2em;
+
+                        @media (max-width: 992px) {
+                            padding: 0;
+                            margin: 0;
+                        } 
+                    }
+                }
+            }
+
+            .adv_2{
+                display: flex;
+                flex-direction: column;
+                border-radius: 15px;
+                margin: 20px 0;
+                opacity: 0.8;
+                gap: 10px;
+
+                .advBlock{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: start;
+
+                    div{
+                        fill: #2a75ff; 
+                        display: none;
+                        @media (max-width: 800px) {
+                            display: block;
+                        } 
+                    }
+
+                    h3{
+                        color: #2a75ff;
+                        font-family: "Inter", sans-serif;
+                        font-size: 20px;
+                        margin: 0 10px;
+                        
+                        @media (max-width: 992px) {
+                            font-size: 18px;
+                            margin: 0;
+                            padding: 0;
+                        }                      
+                    }
+
+                    p{
+                        font-size: 16px;
+                        line-height: 1.2em;
+                        margin: 0;
+
+                        @media (max-width: 992px) {
+                            margin: 0;
+                            padding: 0;
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
