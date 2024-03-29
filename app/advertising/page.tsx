@@ -17,6 +17,18 @@ import styles from "./advertising.module.scss";
 
 const Advertising = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [modalTwoOpen, setModalTwoOpen] = useState (false);
+
+  const openModalOne = () => {
+    setModalTwoOpen(false); 
+    setModalOpen(!modalOpen); 
+  };
+
+  const openModalTwo = () => {
+    setModalOpen(false); 
+    setModalTwoOpen(!modalTwoOpen); 
+  };
+
   const data = {
     paragraph:
       " играют решающую роль в успехе любого бизнеса. Они позволяют компаниям эффективно общаться с целевой аудиторией, привлекать внимание к своим продуктам или услугам и создавать уникальное впечатление о бренде. Преимущества маркетинга и рекламы включают улучшение узнаваемости бренда, установление доверия у потребителей, увеличение продаж и расширение аудитории. Кроме того, правильно спланированные маркетинговые и рекламные кампании могут помочь компаниям выделиться среди конкурентов и удерживать лидирующие позиции на рынке.",
@@ -198,7 +210,7 @@ const Advertising = () => {
               </p>
               <button
                 className={styles.btnConsult}
-                onClick={() => setModalOpen(!modalOpen)}
+                onClick={openModalOne}
               >
                 <span>{data.btn_consult}</span>
               </button>
@@ -218,12 +230,16 @@ const Advertising = () => {
             </p>
             <button
               className={styles.btnConsult}
-              onClick={() => setModalOpen(!modalOpen)}
+              onClick={openModalTwo}
             >
               <span>{data.btn_consult}</span>
             </button>
+            <div className={styles.modalForm}>
+              {modalTwoOpen && <ModalForm modal={setModalTwoOpen} />}
+            </div>
           </div>
           <img src={data.imgPackage} alt="recept" />
+          
         </div>
 
         <div className={styles.examplesPackage}>

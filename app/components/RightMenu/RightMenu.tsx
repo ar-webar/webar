@@ -30,7 +30,7 @@ const RightMenu = ({ show }: PropsType) => {
 			{
 				icon: <Email />,
 				contact: "info@webar.by",
-				href: "",
+				href: "mailto:info@webar.by",
 			},
 			{
 				icon: <Map />,
@@ -40,7 +40,7 @@ const RightMenu = ({ show }: PropsType) => {
 		],
 		messengers: [
 			{
-				url: "https://t.me/Webarby",
+				url: "https://t.me/dima_venditio",
 				icon: <TelegramIcon />,
 				name: "Telegram",
 			},
