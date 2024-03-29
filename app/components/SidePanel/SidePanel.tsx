@@ -13,12 +13,12 @@ const SidePanel = () => {
     const data = {
         messengers: [
             {
-                url: "tel:+375293385901",
+                url: "tel:+375296164004",
                 icon: <Tel />,
                 name: "Instagram",
             },
             {
-                url: "https://t.me/Webarby",
+                url: "https://t.me/dima_venditio",
                 icon: <TelegramIcon />,
                 name: "Telegram",
             },
