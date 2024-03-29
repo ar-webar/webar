@@ -13,19 +13,23 @@ const ContactBlock = () => {
             {
                 icon: <Telephone />,
                 contact: "+375296164004",
-                href: "",
+                href: "tel:+375296164004",
+                title: "+375 (29) 616 40 04",
                 subTitle: "Доступны c 9:00 — 18:00"
             },
             {
                 icon: <Email />,
-                contact: "info@webar.by",
-                href: "",
-                subTitle: "Пишите нам на почту 24/7"
+                contact: "sale_1@webar.by",
+                href: "mailto:sale_1@webar.by",
+                title: "sale_1@webar.by",
+                subTitle: "Пишите нам на почту 24/7",
+                
             },
             {
                 icon: <TelegramIcon />,
-                contact: "@Webarby",
-                href: "",
+                contact: "@dima_venditio",
+                href: "https://t.me/dima_venditio",
+                title: "@dima_venditio",
                 subTitle: "Пишите нам в telegram 24/7"
             },
         ]
@@ -42,13 +46,15 @@ const ContactBlock = () => {
                     Единственное звоните нам только в рабочее время с 9 утра до 18 часов, на мессенджеры пишите как удобно, ответим при первой возможности 🙂
                 </h3>
                 {data.contacts.map(contact =>
-                    <Link href={contact.href} key={contact.contact} className={styles.contact}>
+                    <div key={contact.contact} className={styles.contact}>
+                        
                         <div className={styles.icon}>{contact.icon}</div>
                         <div className={styles.contactView}>
                             <p className={styles.commentContact}>{contact.subTitle}</p>
-                            <p className={styles.titleContact}>{contact.contact}</p>
+                            <Link href={contact.href} title={contact.title} className={styles.titleContact}>{contact.contact}</Link>
+                            
                         </div>
-                    </Link>
+                    </div>
                 )}
             </div>
             <div className={styles.contactForm}>
