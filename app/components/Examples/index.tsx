@@ -16,7 +16,7 @@ const data = {
   title: 'Примеры некоторых работ',
   list: [
     {
-      videoUrl: 'https://webar.by//wp-content/uploads/drakon.mp4'
+      videoUrl: 'Video/carouselVideo.mp4'
     },
     {
       videoUrl: '/Video/genocyd.mp4'
@@ -28,7 +28,7 @@ const data = {
       videoUrl: '/Video/betera.mp4'
     },
     {
-      videoUrl: 'https://webar.by//wp-content/uploads/webar.mp4'
+      videoUrl: 'Video/heroblockVideo.mp4'
     },
     {
       videoUrl: '/Video/narkomany.mp4'

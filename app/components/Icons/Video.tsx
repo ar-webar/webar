@@ -5,11 +5,12 @@ import React from 'react'
 const Video = () => {
 
   return (
-      <video src='https://webar.by/wp-content/uploads/webar.mp4'
+      <video src='Video/heroblockVideo.mp4'
       autoPlay
       muted
       playsInline
       loop
+      preload=""
     >
       </video>
   )
