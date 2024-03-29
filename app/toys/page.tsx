@@ -1,11 +1,17 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import styles from './index.module.scss';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ModalForm from '../components/ModalForm/ModalForm';
 
 const ToysPage = () => {
+    const [consultOpen, setConsultOpen] = useState(false)
     const data = [
         {
+            btn_consult: {
+                name: 'Заказать консультацию'
+            },
             title_1: 'Дополненная реальность (AR) ',
             title_2: 'в развлекательной сфере',
             description: 'Игрушки с дополненной реальностью, видео-инструкции и обзоры, оживающие загадки и головоломки для квест-игр, виртуальные персонажи и игровые 3д-объекты',
@@ -76,6 +82,12 @@ const ToysPage = () => {
                         {el.section_3_1_1}
                     </p>
                     <p>{el.section_3_2}</p>
+                    <button className={styles.btnConsult} onClick={() => setConsultOpen(!consultOpen)}>
+                        <span>{el.btn_consult.name}</span>
+                    </button>
+                    <div className={styles.modalForm} >
+                        {consultOpen && (<ModalForm modal={setConsultOpen} />)}
+                    </div>
                 </div>
             )}
             <Footer />

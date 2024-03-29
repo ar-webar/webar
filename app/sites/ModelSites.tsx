@@ -11,7 +11,7 @@ const ModelSites = () => {
         {
             picture: '/sites/mod.webp',
             btn_consult: {
-                name: 'Заказать консультацию'
+                name: 'Скачать прайс'
             },
             section_1: {
                 title: 'Создание двухмерных и трехмерных изображений',

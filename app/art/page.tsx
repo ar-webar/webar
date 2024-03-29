@@ -1,5 +1,6 @@
+'use client'
 import styles from './index.module.scss';
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Interactive from '../components/Icons/ArtIcon/Interactive';
@@ -7,11 +8,16 @@ import Uniq from '../components/Icons/ArtIcon/Uniq';
 import Education from '../components/Icons/ArtIcon/Education';
 import Attention from '../components/Icons/ArtIcon/Attention';
 import Innovacion from '../components/Icons/ArtIcon/Innovacion';
+import ModalForm from '../components/ModalForm/ModalForm';
 
 const Mural = () => {
+    const [consultOpen, setConsultOpen] = useState(false)
     const data = {
         title: 'Муралы и фотообои с дополненной реальностью, "оживающая" роспись стен',
         description: '"Живые" фотообои и "оживающие" муралы представляют собой инновационный способ использования дополненной реальности для создания уникальных и захватывающих визуальных опытов, которые могут привлечь внимание и удивить пользователей. А также применение AR в муралах с социальной тематикой может не только привлечь внимание к важным проблемам, но и вдохновить людей на действие и участие в решении этих проблем.',
+        btn_consult: {
+            name: 'Заказать консультацию'
+        },
         mural: {
             title: 'Оживающие муралы с дополненной реальностью - ',
             description: 'это удивительное сочетание искусства и технологии.',
@@ -130,6 +136,12 @@ const Mural = () => {
                     </div>
                 </div>
                 <p>{data.description}</p>
+                <button className={styles.btnConsult} onClick={() => setConsultOpen(!consultOpen)}>
+                    <span>{data.btn_consult.name}</span>
+                </button>
+            </div>
+            <div className={styles.modalForm} >
+                {consultOpen && (<ModalForm modal={setConsultOpen} />)}
             </div>
             <Footer />
         </div>
