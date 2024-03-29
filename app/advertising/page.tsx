@@ -13,6 +13,8 @@ import ContentSvg from "../components/Icons/svgForMarketing/ContentSvg";
 import SeoSvg from "../components/Icons/svgForMarketing/SeoSvg";
 import ModalForm from "../components/ModalForm/ModalForm";
 import styles from "./advertising.module.scss";
+
+
 const Advertising = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const data = {
@@ -43,8 +45,7 @@ const Advertising = () => {
           {
             liTextOne: "Привлечение трафика",
             liTextTwo: "Увеличение целевой аудитории",
-            liTextThree: "Повышение узнаваемости компании",
-            liTextFour: "Лидогенерация",
+            liTextThree: "Повышение узнаваемости компании"
           },
         ],
       },
@@ -57,6 +58,7 @@ const Advertising = () => {
               "Использование инструментов аналитики (Google Analytics, Яндекс Метрика) для отслеживания производительности сайта",
             liTextTwo:
               "Оптимизация стратегии продвижения на основе данных и метрик",
+            liTextThree: "Анализ конкурентов: изучение их действий и стратегий, оценка их сайтов, ключевых слов и маркетинговых подходов"
           },
         ],
       },
@@ -163,8 +165,7 @@ const Advertising = () => {
                   <ul key={index}>
                     <li>{el.liTextOne}</li>
                     <li>{el.liTextTwo}</li>
-                    {el.liTextThree && <li>{el.liTextThree}</li>}
-                    {el.liTextFour && <li>{el.liTextFour}</li>}
+                   <li>{el.liTextThree}</li>
                   </ul>
                 ))}
               </div>
