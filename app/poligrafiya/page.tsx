@@ -1,11 +1,18 @@
+'use client'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import ModalForm from '../components/ModalForm/ModalForm'
 import styles from './index.module.scss'
-import React from 'react'
+import React, { useState } from 'react'
 
 const Poligrafiya = () => {
+    const [consultOpen, setConsultOpen] = useState(false)
     const data = [
         {
+            title: 'Печатная продукция с дополненной реальностью (AR)',
+            btn_consult: {
+                name: 'Заказать консультацию'
+            },
             span: 'Дополненная реальность ',
             description: 'дает авторам книг, издательствам и типографиям возможность создания уникального и запоминающегося продукта, который может выделиться среди других на рынке, а также позволяет экспериментировать с визуальными и интерактивными элементами. Такой продукт обладает высокой привлекательностью для покупателей, читателей, особенно детей и подростков, которые росли в мире гаджетов и интерактивных технологий. AR-технологии предлагают новый уровень взаимодействия и позволяют людям буквально погрузиться в историю.',
             section_1: {
@@ -49,6 +56,7 @@ const Poligrafiya = () => {
             <Header />
             {data.map(el =>
                 <div className={styles.content} key={el.description}>
+                    <h1>{el.title}</h1>
                     <div className={styles.section_1}>
                         <p>
                             <span>{el.span}</span>
@@ -87,6 +95,21 @@ const Poligrafiya = () => {
                         <p>{el.section_3.text_2}</p>
                         <p>{el.section_3.text_3}</p>
                         <p>{el.section_3.text_4}</p>
+
+                    </div>
+                    {/* <button className={styles.btnConsult} onClick={() => setConsultOpen(!consultOpen)}>
+                        <span>{el.btn_consult.name}</span>
+                    </button>
+                    <div className={styles.modalForm} >
+                        {consultOpen && (<ModalForm modal={setConsultOpen} />)}
+                    </div> */}
+                    <div className={styles.consalt}>
+                        <button className={styles.btnConsult} onClick={() => setConsultOpen(!consultOpen)}>
+                            <span>{el.btn_consult.name}</span>
+                        </button>
+                        <div className={styles.modalForm} >
+                            {consultOpen && (<ModalForm modal={setConsultOpen} />)}
+                        </div>
                     </div>
                 </div>
             )}
