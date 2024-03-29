@@ -23,7 +23,7 @@ const DesignSites = () => {
                 { img: '/sites/izo.jpg' },
             ],
             btn_consult: {
-                name: 'Заказать консультацию'
+                name: 'Скачать прайс'
             },
             section_1: {
                 title: 'Искусство разработки дизайна для вашего сайта',

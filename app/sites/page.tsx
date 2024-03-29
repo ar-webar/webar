@@ -24,7 +24,7 @@ const PageCreateSites = () => {
             title: 'Создание продающих сайтов',
             picture: '/sites/ноут.jpg',
             btn_consult: {
-                name: 'Заказать консультацию'
+                name: 'Скачать прайс'
             },
             section_1: {
                 title: 'Индивидуальные лендинги',
