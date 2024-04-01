@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Model from "../components/Icons/model";
+import Model from "../components/Icons/ModelIcon";
 import ModalForm from "../components/ModalForm/ModalForm";
 import styles from "./exhibitions.module.scss";
 
