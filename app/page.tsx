@@ -10,6 +10,7 @@ import AccordionBlock from './components/AccordionBlock/AccordionBlock';
 import Header from './components/Header';
 import styles from './home.module.scss';
 import Spheres from './components/Spheres';
+import Reviews from './components/ReviewsBlock/Reviews';
 
 
 const Home = () => {
@@ -20,10 +21,11 @@ const Home = () => {
       <Examples />
       <AdvantagesBlock />
       <WorkingBlock />
-      <Spheres/>
+      <Spheres />
       <Partners />
       <AccordionBlock />
       <ContactBlock />
+      <Reviews />
       <Footer />
     </section>
   );

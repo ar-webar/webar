@@ -72,6 +72,7 @@
             padding: 10px;
         }
 
+
         .btnConsult {
             font-family: "Inter", sans-serif;
             // background-color: #111a2e;
@@ -245,6 +246,7 @@
                     flex-direction: column;
                     height: 100px;
                     width: 100px;
+                    transition: all 0.8s;
     
                     @media (max-width: 576px) {
                         margin: 0 auto;
@@ -265,10 +267,11 @@
                         flex-direction: column;
                         height: 100px;
                         width: 100px;
+                        transition: all 0.8s;
     
                         &:hover{
                             transform: none;
-                            transition: all 0.4s;
+                            border-radius: 100%;
                         }
 
                         @media (max-width: 576px) {
