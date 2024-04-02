@@ -11,6 +11,7 @@ export type FormData = {
   email: string;
   tel: string;
   message: string;
+  // isPrice: number;
 };
 
 export const Contact: FC = () => {
@@ -53,6 +54,14 @@ export const Contact: FC = () => {
           placeholder="+ 375 (33) 299-16-16"
           {...register("tel", { required: true })}
         />
+        {/* <div className={styles.price}>
+          <label htmlFor="number" >Price*</label>
+          <input
+            type="number"
+            placeholder="0"
+            {...register("name", { required: '1' })}
+          />
+        </div> */}
       </div>
       <div>
         <label htmlFor="message">Как мы можем вам помочь?*</label>
