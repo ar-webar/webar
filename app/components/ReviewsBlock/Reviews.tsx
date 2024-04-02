@@ -30,7 +30,7 @@ const Reviews = () => {
             <h1>{data.title}</h1>
             <div className={styles.reviews}>
                 {data.reviews.map(el =>
-                    <div className={styles.rev}>
+                    <div className={styles.rev} key={el.name}>
                         <img src={el.img} alt='лайк' />
                         <div className={styles.block}>
                             <div>
