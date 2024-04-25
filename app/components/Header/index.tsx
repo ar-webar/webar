@@ -19,11 +19,6 @@ const data = {
             url: '/#Advantages',
             name: 'Преимущества'
         },
-        // {
-        //     url: '',
-        //     name: 'Каталог',
-        //     list: <Pages />
-        // },
         {
             url: '/#Examples',
             name: 'Примеры работ'
@@ -32,10 +27,6 @@ const data = {
             url: '/#Questions',
             name: 'Частые вопросы'
         },
-        // {
-        //     url: '',
-        //     name: 'Блог'
-        // },
         {
             url: '/#Contacts',
             name: 'Контакты'
