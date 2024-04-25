@@ -57,13 +57,23 @@
             }
         }
 
-        .section{
+        .section, .section_2{
             margin-top: 50px;
             img{
                 float: right;
                 width: 40%;
                 border-radius: 15px;
                 margin-left: 15px;
+                @media (max-width: 992px) {
+                    width: 50%;
+                }
+            }
+
+            .photo{
+                @media (max-width: 500px) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                } 
             }
 
             h2{
@@ -110,13 +120,12 @@
             }
 
             .adv{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                display: flex;
+                flex-direction: column;
+                text-align: start;
                 gap: 20px;
-                background: white;
                 border-radius: 15px;
-                padding: 10px;
-                box-shadow: 10px 8px 10px 5px  #adb7c8;
+                backdrop-filter: blur(5px);
                 margin: 40px 0;
                 opacity: 0.8;
 
@@ -132,16 +141,27 @@
 
                 .advBlock{
                     display: flex;
-                    flex-direction: column;
+                    align-items: center;
+                    gap:10px;
+                    
+                    padding: 0;
+                    margin: 0;
 
                     div{
                         fill: #2a75ff; 
+                    }
+
+                    .block{
+                        align-items: center;
+                        justify-content: center;
                     }
 
                     h3{
                         color: #2a75ff;
                         font-family: "Inter", sans-serif;
                         font-size: 20px;
+                        padding: 0;
+                        margin: 0;
                         
                         @media (max-width: 992px) {
                             font-size: 18px;
@@ -152,6 +172,8 @@
                     p{
                         font-size: 16px;
                         line-height: 1.2em;
+                        padding: 0;
+                        margin: 0;
 
                         @media (max-width: 992px) {
                             padding: 0;
@@ -207,6 +229,12 @@
                     }
                 }
             }
+        }
+
+        .section_2{
+            @media (max-width: 500px) {
+                margin: 0px;
+            }   
         }
     }
 }

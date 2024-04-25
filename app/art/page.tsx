@@ -113,12 +113,15 @@ const Mural = () => {
                         {data.mural.advantages.adv.map(el =>
                             <div className={styles.advBlock} key={el.subTitle}>
                                 <div>{el.icon}</div>
-                                <h3>{el.subTitle}</h3>
-                                <p>{el.descrip}</p>
+                                <div className={styles.block}>
+                                    <h3>{el.subTitle}</h3>
+                                    <p>{el.descrip}</p>
+                                </div>
+
                             </div>)}
                     </div>
                 </div>
-                <div className={styles.section}>
+                <div className={styles.section_2}>
                     <img src={data.fotooboi.photo} alt={data.fotooboi.alt} className={styles.photo} />
                     <p>
                         <span>{data.fotooboi.title}</span>

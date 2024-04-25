@@ -69,6 +69,11 @@
         img{
             border-radius: 15px;
             width: 25%;
+            transition: all 0.8s;
+
+            &:hover{
+                border-radius: 50%;
+            }
         }
 
         @media (max-width: 570px) {
