@@ -47,15 +47,15 @@ const data = {
 };
 
 const Header = () => {
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(false);
 
     const menuOpen = () => {
-        setMenu(!menu)
+        setMenu(!menu);
     }
 
-    const [menuMob, setMenuMob] = useState(false)
-    const [modal, setModal] = useState(false)
-    const [list, setList] = useState(false)
+    const [menuMob, setMenuMob] = useState(false);
+    const [modal, setModal] = useState(false);
+    const [list, setList] = useState(false);
 
     const onMouseEnterHandler = () => {
         setList(true);
